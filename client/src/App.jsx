@@ -3,7 +3,8 @@ import './App.css'
 import io from 'socket.io-client'
 import Send from './assets/send.svg'
 
-const socket = io('http://localhost:4000')
+//const socket = io('http://localhost:4000')
+const socket = io()
 
 function App() {
   const [message, setMessage] = useState('')
